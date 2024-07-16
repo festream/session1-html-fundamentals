@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+
+        <p>
+            <label for="customerEmail">Your email: </label>
+            <input type="email" name="customerEmail" id="customerEmail">
+        </p>
+        <p><label for="customerPhone">Your phone: </label>
+            <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone">
+        </p>
+        <p>
+
+
+        <p>
+            Ok to contact me:
+            <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+            <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+
+        </p>
+
+        <p>
+            <textarea name="feedbackText" cols="40" rows="3"></textarea>
+        </p>
+
+        <p><label for="severityRange">Severity: </label>
+            <input type="range" min="1" max="10" name="severityRange" id="severityRange">
+        </p>
+        <p><label for="severity">Severity: </label>
+            <input type="number" min="1" max="20" name="severity" id="severity"></label>
+        </p>
+        <p>
+            <label for="issueDate">Issue date: </label>
+            <input type="date" name="issueDate" id="issueDate">
+        </p>
+        <p>
+            <label for="issueTime">Issue time: </label>
+            <input type="time" name="issueTime" id="issueTime">
+        </p>
+
+        <input type="submit" value="submit">
+
+    </form>
+
+</body>
+
+</html>
